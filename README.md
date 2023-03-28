@@ -1,3 +1,118 @@
+Para gerar uma imagem NFT utilizando o nft-generator-py:
+scss
+Copy code
+from nft_generator_py import NFTGenerator
+
+generator = NFTGenerator()
+generator.generate_image()
+Para carregar uma chave privada do Ocean Protocol utilizando o ocean.py:
+java
+Copy code
+from ocean_lib.web3_internal.wallet import Wallet
+
+private_key = "..."
+wallet = Wallet(private_key)
+Para listar todos os ativos disponíveis no mercado do Ocean Protocol utilizando o ocean.py:
+scss
+Copy code
+from ocean_lib.models.asset_list import AssetList
+
+asset_list = AssetList()
+assets = asset_list.list()
+Para instanciar um modelo GPT-3 do OpenAI utilizando o GPT3Discord:
+java
+Copy code
+from GPT3Discord import GPT3
+
+model = GPT3(api_key="...", model_id="...")
+Para enviar uma mensagem para o modelo GPT-3 e obter uma resposta utilizando o GPT3Discord:
+makefile
+Copy code
+response = model.send_message("Olá, tudo bem?")
+Para gerar uma imagem NFT personalizada utilizando o nft-generator-py:
+scss
+Copy code
+from nft_generator_py import NFTGenerator
+
+generator = NFTGenerator()
+generator.set_color("#FF0000")
+generator.set_background_color("#FFFFFF")
+generator.set_shape("circle")
+generator.set_text("Hello World!")
+generator.generate_image()
+Para obter informações sobre um ativo específico utilizando o ocean.py:
+makefile
+Copy code
+from ocean_lib.models.data_token import DataToken
+
+asset_address = "..."
+token = DataToken(asset_address)
+info = token.info()
+Para listar todos os provedores de armazenamento disponíveis no Ocean Protocol utilizando o ocean.py:
+java
+Copy code
+from ocean_lib.ocean.util import get_provider_info
+
+providers = get_provider_info()
+Para treinar um modelo GPT-3 do OpenAI utilizando o GPT3Discord:
+css
+Copy code
+model.train(prompt="Olá, tudo bem?", examples=["Sim, estou bem", "Não estou bem"])
+Para transferir um ativo do Ocean Protocol utilizando o ocean.py:
+makefile
+Copy code
+from ocean_lib.models.data_token import DataToken
+
+asset_address = "..."
+to_address = "..."
+amount = 1
+
+token = DataToken(asset_address)
+token.transfer(to_address, amount)
+Para obter o preço atual de um ativo no mercado do Ocean Protocol utilizando o ocean.py:
+makefile
+Copy code
+from ocean_lib.models.bpool import BPool
+
+asset_address = "..."
+pool = BPool(asset_address)
+price = pool.get_price()
+Para listar todas as transações de um ativo específico utilizando o ocean.py:
+makefile
+Copy code
+from ocean_lib.models.data_token import DataToken
+
+asset_address = "..."
+token = DataToken(asset_address)
+transactions = token.get_transactions()
+Para gerar uma imagem NFT aleatória utilizando o nft-generator-py:
+scss
+Copy code
+from nft_generator_py import NFTGenerator
+
+generator = NFTGenerator()
+generator.set_random_properties()
+generator.generate_image()
+Para criar um novo ativo no Ocean Protocol utilizando o ocean.py:
+makefile
+Copy code
+from ocean_lib.models.data_token import DataToken
+
+name = "My Asset"
+symbol = "MYASSET"
+initial_supply = 1000
+
+token = DataToken()
+token.create(name, symbol, initial_supply)
+Para obter a lista de todas as contas disponíveis no Ocean Protocol utilizando o ocean.py:
+java
+Copy code
+from ocean_lib.ocean.util import get_account_addresses
+
+accounts = get_account_addresses()
+
+
+
 <!--
 Copyright 2023 Ocean Protocol Foundation
 SPDX-License-Identifier: Apache-2.0
