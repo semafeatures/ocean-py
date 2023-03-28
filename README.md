@@ -1,3 +1,4 @@
+
 Para gerar uma imagem NFT utilizando o nft-generator-py:
 scss
 Copy code
@@ -110,6 +111,8 @@ Copy code
 from ocean_lib.ocean.util import get_account_addresses
 
 accounts = get_account_addresses()
+
+
 
 
 
